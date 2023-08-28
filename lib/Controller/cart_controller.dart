@@ -123,6 +123,15 @@ class CartController extends GetxController{
 
   void addToHistory(){
       cartRepo.addToCartHistoryList();
+      clear();
   }
 
+  void clear(){
+    _items ={};
+    update();
+  }
+
+  List<CartModel> getCartHistoryList(){
+    return cartRepo.getCartHistoryList();
+  }
 }

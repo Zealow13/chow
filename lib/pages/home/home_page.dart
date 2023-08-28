@@ -1,3 +1,4 @@
+import 'package:chow/pages/cart/cart_history.dart';
 import 'package:chow/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
@@ -18,10 +19,10 @@ class _HomePageState extends State<HomePage> {
 
 
   List pages = [
-    MainFoodPage(),
-    Container(child: Center(child: Text("Next Page")),),
-    Container(child: Center(child: Text("Next next Page")),),
-    Container(child: Center(child: Text("Next next next Page")),),
+    const MainFoodPage(),
+    Container(child: const Center(child: Text("Next Page")),),
+    Container(child: const Center(child: Text("Next next Page")),),
+    Container(child: const Center(child: Text("Next next next Page")),),
 
   ];
 
@@ -38,35 +39,36 @@ class _HomePageState extends State<HomePage> {
   }
   List<Widget> _buildScreens() {
     return [
-      MainFoodPage(),
-      Container(child: Center(child: Text("Next Page")),),
-      Container(child: Center(child: Text("Next next Page")),),
-      Container(child: Center(child: Text("Next next next Page")),),
+      const MainFoodPage(),
+      Container(child: const Center(child: Text("Next Page")),),
+      const CartHistory(),
+      Container(child: const Center(child: Text("Next next next Page")),),
+
     ];
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.home_filled),
+        icon: const Icon(Icons.home_filled),
         title: "Home",
         activeColorPrimary: AppColors.cBgColor,
         inactiveColorPrimary: Colors.amberAccent,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.archive_rounded),
+        icon: const Icon(Icons.archive_rounded),
         title: "History",
         activeColorPrimary: AppColors.cBgColor,
         inactiveColorPrimary: Colors.amberAccent,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.shopping_cart),
+        icon: const Icon(Icons.shopping_cart),
         title: "Cart",
         activeColorPrimary: AppColors.cBgColor,
         inactiveColorPrimary: Colors.amberAccent,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.person),
+        icon: const Icon(Icons.person),
         title: "Profile",
         activeColorPrimary: AppColors.cBgColor,
         inactiveColorPrimary: Colors.amberAccent,
@@ -129,11 +131,11 @@ class _HomePageState extends State<HomePage> {
       ),
       popAllScreensOnTapOfSelectedTab: true,
       popActionScreens: PopActionScreensType.all,
-      itemAnimationProperties: ItemAnimationProperties( // Navigation Bar's items animation properties.
+      itemAnimationProperties: const ItemAnimationProperties( // Navigation Bar's items animation properties.
         duration: Duration(milliseconds: 200),
         curve: Curves.ease,
       ),
-      screenTransitionAnimation: ScreenTransitionAnimation( // Screen transition animation on change of selected tab.
+      screenTransitionAnimation: const ScreenTransitionAnimation( // Screen transition animation on change of selected tab.
         animateTabTransition: true,
         curve: Curves.ease,
         duration: Duration(milliseconds: 200),
