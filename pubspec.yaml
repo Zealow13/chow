@@ -68,6 +68,8 @@ flutter:
     - assets/image/
     - assets/image/chow_icon.png
     - assets/image/logo.png
+    - assets/image/empty_cart.png
+    - assets/image/empty.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

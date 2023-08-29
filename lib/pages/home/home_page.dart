@@ -1,3 +1,4 @@
+import 'package:chow/pages/account/account_page.dart';
 import 'package:chow/pages/cart/cart_history.dart';
 import 'package:chow/utils/colors.dart';
 import 'package:flutter/material.dart';
@@ -21,8 +22,8 @@ class _HomePageState extends State<HomePage> {
   List pages = [
     const MainFoodPage(),
     Container(child: const Center(child: Text("Next Page")),),
-    Container(child: const Center(child: Text("Next next Page")),),
-    Container(child: const Center(child: Text("Next next next Page")),),
+    const CartHistory(),
+    const AccountPage(),
 
   ];
 
@@ -42,7 +43,9 @@ class _HomePageState extends State<HomePage> {
       const MainFoodPage(),
       Container(child: const Center(child: Text("Next Page")),),
       const CartHistory(),
-      Container(child: const Center(child: Text("Next next next Page")),),
+      // Container(child: const Center(child: Text("Next next Page")),),
+      const AccountPage(),
+      // Container(child: const Center(child: Text("Next next next Page")),),
 
     ];
   }
