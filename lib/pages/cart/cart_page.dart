@@ -1,3 +1,4 @@
+import 'package:chow/Controller/auth_controller.dart';
 import 'package:chow/Controller/cart_controller.dart';
 import 'package:chow/Controller/popular_product_Controller.dart';
 import 'package:chow/base/no_data_page.dart';
@@ -204,9 +205,13 @@ class CartPage extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: (){
-                    //popularProduct.addItem(product);
-                    print("tapped");
-                    cartController.addToHistory();
+                    if(Get.find<AuthController>().userLoggedIn()){
+                      print("tapped");
+                      cartController.addToHistory();
+                    }else{
+                      Get.toNamed(RouteHelper.getSignInPage());
+                    }
+
                   },
                   child: Container(
                     padding: EdgeInsets.only(top: Dimensions.height20-5, bottom: Dimensions.height20-7, left: Dimensions.width20, right: Dimensions.width20),

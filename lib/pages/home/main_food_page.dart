@@ -1,4 +1,4 @@
-import 'package:chow/home/food_page_body.dart';
+// import 'package:chow/home/food_page_body.dart';
 import 'package:chow/utils/colors.dart';
 import 'package:chow/utils/dimensions.dart';
 import 'package:chow/widgets/big_text.dart';

@@ -44,6 +44,9 @@ dev_dependencies:
   persistent_bottom_nav_bar_v2: ^4.2.8
   shared_preferences: ^2.2.0
   intl: ^0.18.1
+  google_maps_flutter: ^2.4.1
+  geocoding: ^2.1.0
+  geolocator: ^10.0.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -70,6 +73,9 @@ flutter:
     - assets/image/logo.png
     - assets/image/empty_cart.png
     - assets/image/empty.jpg
+    - assets/image/f.png
+    - assets/image/g.png
+    - assets/image/t.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

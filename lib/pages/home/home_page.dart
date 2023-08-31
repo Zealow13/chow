@@ -1,4 +1,6 @@
 import 'package:chow/pages/account/account_page.dart';
+import 'package:chow/pages/auth/sign_in_page.dart';
+import 'package:chow/pages/auth/sign_up_page.dart';
 import 'package:chow/pages/cart/cart_history.dart';
 import 'package:chow/utils/colors.dart';
 import 'package:flutter/material.dart';
@@ -41,6 +43,7 @@ class _HomePageState extends State<HomePage> {
   List<Widget> _buildScreens() {
     return [
       const MainFoodPage(),
+      // const SignInPage(),
       Container(child: const Center(child: Text("Next Page")),),
       const CartHistory(),
       // Container(child: const Center(child: Text("Next next Page")),),

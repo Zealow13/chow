@@ -53,4 +53,14 @@ class Dimensions{
 
   //For splash Screen
   static double splashImg = screenHeight/3.308;
+
+  //Button size
+  static double btnSizeW360 = screenWidth/1.1;
+  static double btnSize50 = screenHeight/16.54;
+
 }
+
+
+
+//Height = 826.91
+//Width = 392.73

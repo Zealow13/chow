@@ -203,5 +203,3 @@ class PopularFoodDetails extends StatelessWidget {
 
 
 
-//Height = 826.91
-//Width = 392.73

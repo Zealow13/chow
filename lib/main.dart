@@ -1,5 +1,7 @@
 import 'package:chow/Controller/cart_controller.dart';
 import 'package:chow/Controller/popular_product_Controller.dart';
+import 'package:chow/pages/auth/sign_in_page.dart';
+import 'package:chow/pages/auth/sign_up_page.dart';
 import 'package:chow/pages/cart/cart_page.dart';
 import 'package:chow/pages/food/popular_food_details.dart';
 import 'package:chow/pages/food/recommended_food_detail.dart';
@@ -31,8 +33,9 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
+          //home: SignInPage(),
           //home: const SplashScreen(),
-          // home: MainFoodPage(),
+          //home: MainFoodPage(),
           initialRoute: RouteHelper.getSplashPage(),
           getPages: RouteHelper.routes,
           // const MainFoodPage(),
